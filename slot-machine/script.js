@@ -1,0 +1,64 @@
+body
+
+.status-bar {
+display: flex;
+justify-content: space-between;
+margin-bottom: 15px;
+font-size: 14px;
+}
+
+
+.reels {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+margin: 20px 0;
+}
+
+
+.reel {
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.buttons button {
+margin: 5px;
+padding: 10px 15px;
+border: none;
+border-radius: 8px;
+font-weight: bold;
+cursor: pointer;
+transition: transform 0.1s;
+}
+
+
+#spinBtn {
+background: linear-gradient(to right, #fbbf24, #ef4444);
+color: black;
+}
+
+
+#autoBtn, #resetBtn {
+background: rgba(255, 255, 255, 0.1);
+color: white;
+}
+
+
+.buttons button:hover {
+transform: scale(1.05);
+}
+
+
+.rules {
+margin-top: 15px;
+font-size: 12px;
+opacity: 0.8;
+}
