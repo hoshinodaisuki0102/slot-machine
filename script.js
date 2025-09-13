@@ -105,5 +105,3 @@ resetBtn.addEventListener('click', resetGame);
 
 
 updateUI();
-
-
