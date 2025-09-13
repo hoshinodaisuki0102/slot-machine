@@ -1,4 +1,3 @@
-// 초기 설정
 const START_CREDITS = 10;
 const PAYOUTS = {
   twoOfKind: 5,
@@ -9,7 +8,6 @@ const PAYOUTS = {
 let credits = START_CREDITS;
 let spinning = false;
 
-// DOM 요소 연결
 const messageEl = document.getElementById("message");
 const creditsEl = document.getElementById("credits");
 const reelsEl = document.querySelectorAll(".reel");
@@ -18,11 +16,9 @@ const spinBtn = document.getElementById("spinBtn");
 const autoBtn = document.getElementById("autoBtn");
 const resetBtn = document.getElementById("resetBtn");
 
-// UI 업데이트 함수
 function updateUI() {
   creditsEl.textContent = credits;
 }
-
 
 const SYMBOLS = ['🍒', '🔔', '🍋', '⭐', '💎', '7️⃣'];
 
@@ -109,4 +105,5 @@ resetBtn.addEventListener('click', resetGame);
 
 
 updateUI();
+
 
